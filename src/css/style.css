@@ -4,6 +4,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
@@ -12,10 +14,35 @@ body {
     font-size: 20px;
   }
 
+  input{
+    width: 100%;
+    padding: var(--input-padding);
+    display: block;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 19pt;
+    color: aliceblue;
+    caret-color: aliceblue;
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    transition: border-color .2s ease;
+  }
+  
+
+  input:focus{
+    outline: none;
+  }
+    
+
   .loginForm{
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
+    color: aliceblue;
   }
 
   .content{

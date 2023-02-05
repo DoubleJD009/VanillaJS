@@ -1,6 +1,7 @@
 //Login 처리 js
 const loginForm = document.querySelector("#loginForm");
 const content = document.querySelector("#content");
+const btnLogout = document.querySelector("#btnLogout");
 
 function init() {
   const userName = localStorage.getItem("userName");
@@ -23,5 +24,10 @@ function fnAfterLogin(userName) {
   sayHello.textContent = `Hello ${userName}`;
 }
 
+function fnLogout() {
+  localStorage.setItem("userName", "");
+}
+
 init();
 loginForm.addEventListener("submit", fnLogin);
+btnLogout.addEventListener("click", fnLogout);
