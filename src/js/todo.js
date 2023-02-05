@@ -23,7 +23,7 @@ function fnSaveToDos() {
 }
 
 // 저장 Submit 통제
-function handleToDoSubmit(event) {
+function fnHandleToDoSubmit(event) {
   event.preventDefault();
   const newTodo = todoInput.value;
   todoInput.value = "";
@@ -62,6 +62,6 @@ function fnDeleteTodo(event) {
   fnSaveToDos();
 }
 
-todoForm.addEventListener("submit", handleToDoSubmit);
+todoForm.addEventListener("submit", fnHandleToDoSubmit);
 
 init();
