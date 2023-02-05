@@ -24,8 +24,12 @@ function fnAfterLogin(userName) {
   sayHello.innerText = `Hello ${userName}`;
 }
 
-function fnLogout() {
-  localStorage.setItem("userName", "");
+function fnLogout(event) {
+  if (confirm("Do you want to logout?")) {
+    localStorage.setItem("userName", "");
+  } else {
+    event.preventDefault();
+  }
 }
 
 init();
