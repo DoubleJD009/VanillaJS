@@ -21,7 +21,7 @@ function fnAfterLogin(userName) {
   loginForm.style.display = "none";
   content.style.display = "flex";
   const sayHello = document.querySelector("#sayHello");
-  sayHello.textContent = `Hello ${userName}`;
+  sayHello.innerText = `Hello ${userName}`;
 }
 
 function fnLogout() {

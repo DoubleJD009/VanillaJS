@@ -12,17 +12,26 @@
       <input type="text" name="userName" id="userName">
     </form>
     <div class="content" id="content" style="display:none;">
-      <form>
-        <button id="btnLogout">Logout</button>
-      </form>
-      <div id="weather">
-        <span></span>
-        <span></span>
+      <div class="top">
+        <form>
+          <button id="btnLogout">Logout</button>
+        </form>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <h2 id="clock"></h2>
-      <h2 id="sayHello"></h2>
-      <p>What is your plan?</p>
-      <input type="text" id="todo">
+      <div class="userInfo">
+        <h2 id="clock"></h2>
+        <h2 id="sayHello"></h2>
+      </div>
+      <p style="font-size: 2.5rem;">What is your plan?</p>
+      <form class="todoForm" id="todoForm">
+        <input type="text" id="todo">
+        <div class="todoDiv">
+          <ul id="todoList"></ul>
+        </div>
+      </form>
     </div>
 
     <script src="src/js/background.js"></script>
